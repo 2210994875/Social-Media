@@ -26,7 +26,7 @@ exports.signup = async (req, res) => {
         const newAdmin = { id, email, password: hashedPassword, role: 'admin', registered: true };
         admins.push(newAdmin);
         saveAdminData();
-        return res.status(201).send('First user registered as admin successfully');
+        return res.status(201).send('First user registered successfullyy!!');
     }
 
     const newUser = { id, email, password: hashedPassword, registered: true };
